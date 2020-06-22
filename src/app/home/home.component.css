@@ -1,0 +1,35 @@
+.panda {
+    margin-top: 20px;
+    height: 166px;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+
+.menu {
+    margin-top: 200px;
+}
+
+.item {
+    margin-left: 50%;
+    margin-top: 28px;
+    padding-left: 44px;
+    transform: translate(-50%);
+    width: 310px;
+    height: 95px;
+    background-color: #FFEBD2;
+    color: #464655;
+    font-size: 23px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.item:hover {
+    background-color: #fff2e3;
+}
+
+.text {
+    display: table-cell;
+    width: 310px;
+    height: 95px;
+    vertical-align: middle;
+}

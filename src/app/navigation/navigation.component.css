@@ -1,0 +1,21 @@
+.menu {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    width: 100vw;
+}
+
+.button {
+    width: 50vw;
+    height: 50px;
+    background-color: #6B676E;
+    border: solid 1px #464655;
+    color: #FBFBFB;
+    font-size: 23px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #7d7881;
+}
