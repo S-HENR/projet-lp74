@@ -1,1 +1,19 @@
-<p>vocabulary-choice works!</p>
+<img class="return-button" src="../../../assets/img/arrow.png" alt="" routerLink="/vocabulary">
+<img class="abc" src="../../../assets/img/abc.svg" alt="">
+<img class="panda" src="../../../assets/img/panda.svg" alt="">
+<div class="title" *ngIf="id == 1">
+    Les animaux de la ferme
+</div>
+
+<div class="menu">
+    <div class="item" routerLink="/vocabulary/{{id}}/lesson">    
+        <div class="text">
+            Leçon
+        </div>
+    </div>
+    <div class="item" routerLink="/vocabulary/{{id}}/quiz">
+        <div class="text">
+            Quiz
+        </div>
+    </div>
+</div>

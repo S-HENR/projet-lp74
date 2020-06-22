@@ -10,6 +10,8 @@ import { VocabularyMenuComponent } from './vocabulary/vocabulary-menu/vocabulary
 import { HistoryMenuComponent } from './history/history-menu/history-menu.component';
 import { HistoryContentComponent } from './history/history-content/history-content.component';
 import { VocabularyChoiceComponent } from './vocabulary/vocabulary-choice/vocabulary-choice.component';
+import { VocabularyLessonComponent } from './vocabulary/vocabulary-lesson/vocabulary-lesson.component';
+import { VocabularyQuizComponent } from './vocabulary/vocabulary-quiz/vocabulary-quiz.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { VocabularyChoiceComponent } from './vocabulary/vocabulary-choice/vocabu
     VocabularyMenuComponent,
     HistoryMenuComponent,
     HistoryContentComponent,
-    VocabularyChoiceComponent
+    VocabularyChoiceComponent,
+    VocabularyLessonComponent,
+    VocabularyQuizComponent
   ],
   imports: [
     BrowserModule,
