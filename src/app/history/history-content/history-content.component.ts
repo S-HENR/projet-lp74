@@ -9,6 +9,9 @@ import { ActivatedRoute } from '@angular/router';
 export class HistoryContentComponent implements OnInit {
 
   id:number;
+  story: any;
+  play: any;
+  pause:any;
 
   constructor(
     private route: ActivatedRoute,
@@ -16,6 +19,23 @@ export class HistoryContentComponent implements OnInit {
 
   ngOnInit() {
     this.id = +this.route.snapshot.paramMap.get('id');
+  }
+
+  startAudio(url: string) {
+    this.story = new Audio(url);
+    this.story.play();
+    this.play = document.getElementById("play");
+    this.pause = document.getElementById("pause");
+    this.play.style.display = "none";
+    this.pause.style.display = "block";
+  }
+
+  stopAudio() {
+    this.story.pause();
+    this.play = document.getElementById("play");
+    this.pause = document.getElementById("pause");
+    this.play.style.display = "block";
+    this.pause.style.display = "none";
   }
   
 }
