@@ -18,4 +18,8 @@ export class VocabularyLessonComponent implements OnInit {
     this.id = +this.route.snapshot.paramMap.get('id');
   }
 
+  playAudio(url: string) {
+    new Audio(url).play();
+  }
+
 }
