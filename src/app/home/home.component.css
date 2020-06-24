@@ -30,9 +30,9 @@
 
 .text {
     display: table-cell;
+    vertical-align: middle;
     width: 310px;
     height: 95px;
-    vertical-align: middle;
 }
 
 .icon {
