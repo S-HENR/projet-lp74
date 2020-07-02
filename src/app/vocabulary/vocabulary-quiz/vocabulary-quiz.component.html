@@ -14,23 +14,39 @@
 <div class="cards">
     <div class="card">
         <div class="picture">
-            <img class="image" src="../../../assets/img/cow.svg" alt="">
+            <img class="image" src="../../../assets/img/cow.svg" alt="" (click)="toggleModal('successModal')">
         </div>
     </div>
     <div class="card">
         
         <div class="picture">
-            <img class="image" src="../../../assets/img/sheep.svg" alt="">
+            <img class="image" src="../../../assets/img/sheep.svg" alt="" (click)="toggleModal('errorModal')">
         </div>
     </div>
     <div class="card">
         <div class="picture">
-            <img class="image" src="../../../assets/img/hen.svg" alt="">
+            <img class="image" src="../../../assets/img/hen.svg" alt="" (click)="toggleModal('errorModal')">
         </div>
     </div>
     <div class="card">
         <div class="picture">
-            <img class="image" src="../../../assets/img/pig.svg" alt="">
+            <img class="image" src="../../../assets/img/pig.svg" alt="" (click)="toggleModal('errorModal')">
         </div>
+    </div>
+</div>
+
+<div id="successModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close" (click)="toggleModal('successModal')">&times;</span>
+    <p>Bien joué !</p>
+  </div>
+</div>
+
+<div id="errorModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span id="close" class="close" (click)="toggleModal('errorModal')">&times;</span>
+        <p>Réessaie encore !</p>
     </div>
 </div>
